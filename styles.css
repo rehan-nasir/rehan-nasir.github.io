@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+html {
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Roboto';
     color: white;
@@ -11,7 +13,6 @@ body{
 }
 #intro {
     text-align: left;
-    
 }
 #intro-msg {
     margin-left: 120px;
@@ -49,4 +50,175 @@ body{
 }
 @keyframes typing {
     from {width: 0}
+}
+#about {
+    text-align: center;
+}
+#about-title {
+    padding-top: 150px;
+    font-size: 30px;
+    text-align: center;
+}
+#about-content {
+    width: 100%;
+    height: 100%;
+}
+#about-img-p {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    gap: 30px;
+}
+#abt-p{
+    font-size: 20px;
+    width: 340px;
+}
+#skills-interests-container{
+    margin-left: 30%;
+    margin-right: 30%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+#skills{
+}
+#skill, #interest {
+    font-size: 20px;
+    width: 300px;
+}
+#interests {
+}
+img {
+    border-radius: 20px;
+}
+#skills-title {
+    color: crimson;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 4px;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 70px;
+}
+#projects{
+}
+#projects-text {
+    font-size: 32px;
+    padding-top: 100px;
+    text-align: center;
+    height: 150px;
+}
+#project-grid {
+    margin-top: 90px;
+    flex-grow: 1;
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: min(4vw, 15px);
+}
+.showcase {
+    color: black;
+    background-color: crimson;
+    text-align: center;
+    width: 300px;
+    height: 150px;
+    border: purple;
+    border-radius: 20px;
+    display: grid;
+    place-content: center;
+}
+#navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: crimson;
+    border-radius: 20px;
+}
+#nav-title {
+    display: flex;
+    justify-content: left;
+    margin-left: 65px;
+}
+#nav-links{
+    display: flex;
+    justify-content: right;
+}
+#nav-sec {
+    display: flex;
+    width: 600px;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.nav-text {
+    color: black;
+    font-size: 25px;
+    text-decoration: underline 5px;
+    font-weight: bold;
+    text-underline-offset: 7px;
+}
+#contact{
+    border: solid;
+}
+#contact-title{
+    margin-top: 10%;
+    margin-left: 10%;
+    font-size: 30px;
+    width: 700px;
+    border: solid;
+}
+#socials{
+    background-color: crimson;
+    border-radius: 20px;
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: solid;
+    height: 450px;
+}
+#icons {
+    width: 30%;
+    border: solid;
+}
+#message {
+    width: 80%;
+    border: solid;
+}
+.contact-input{
+    font-family: 'Roboto';
+    font-size: 20px;
+    color: white;
+    border: none;
+    background-color: black;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+#contact-msg {
+    padding-top: 20px;
+    padding-left: 10%;
+    width: 70%;
+}
+.input-style {
+    color: white;
+    border: none;
+    background-color: black;
+}
+.email-name{
+    padding-left: 25px;
+    font-size: 20px;
+    height: 40px;
+    color: white;
+    border-radius: 10px;
+}
+#inp-msg {
+    border: solid;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 20px 10px;
+    line-height: 28px;
+    width: 90%;
 }
