@@ -10,7 +10,20 @@
         <link rel="stylesheet" href="styles.css" type="text/css">
     </head>
     <body>
-        <header>
+        <header id="top">
+            <div id="navbar">
+                <div id="nav-title">
+                    <p class="nav-text">Rehan</p>
+                </div>
+                <nav id="nav-links">
+                    <ul id="nav-sec" class="nav-text">
+                        <li><a href="#intro">Welcome</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <section class="container" id="intro">
             <div id="intro">
@@ -18,8 +31,93 @@
                     <h1>Hello There! I'm Rehan.</h1>
                     <p class="text-anim">Welcome to my page.</p>
                     <div id="btn1">
-                        <button class="btn">CONTACT</button>
+                        <button class="btn" onclick="scrollToContact()">CONTACT</button>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="container" id="about">
+            <div id="about-title">
+                <h2>About Me</h2>
+            </div>
+            <div id="about-content">
+                <div id="about-img-p">
+                    <img src="images/picture.jpg" alt="" height="250px">
+                    <div id="abt-p">
+                        <p>I am currently pursuing a Bachelor's of Science (Honours) in Computer Science at York University. During my time here, I have learned a lot of new skills and interests. I challenge myself everyday by working on new projects and solving technical questions, while still maintaining a proper work-life balance.</p>
+                    </div>
+                </div>
+                <div id="skills-title">
+                    <h2>Skills</h2>
+                </div>
+                <div id="skills-interests-container">
+                    <div id="skills">
+                        <span></span>
+                            <div id="skill">Java</div>
+                            <div id="skill">Python</div>
+                            <div id="skill">HTML</div>
+                            <div id="skill">CSS</div>
+                            <div id="skill">JavaScript</div>
+                            <div id="skill">SQL</div>
+                    </div>
+                    <div id="interests">
+                        <div id="interest">Front End Engineering</div>
+                        <div id="interest">Back End Engineering</div>
+                        <div id="interest">Full Stack Engineering</div>
+                        <div id="interest">Software Engineering</div>
+                        <div id="interest">Data Analysis</div>
+                </div>
+            </div>
+        </section>
+        <section class="container" id="projects">
+            <div id="projects-text">
+                <h2 class="project-anim">Projects</h2>
+            </div>
+            <div id="project-grid">
+                <a href="https://github.com/rehan-nasir/flight-price-predictions" target="_blank"><div class="showcase">
+                    <h3>Flight Data Analysis</h3>
+                    <p id="desc">A team effort to analyse over 300,000 flight samples using python and jupyter notebook.</p>
+                </div></a>
+                <a href="https://github.com/rehan-nasir/etsy-sales-scraper" target="_blank"><div class="showcase" id="etsy">
+                    <h3>Etsy Extract</h3>
+                    <p id="desc">A python web-scraper that returns in-depth information about sellers and their products.</p>
+                </div></a>
+                <a href="https://github.com/rehan-nasir/guess-x" target="_blank"><div class="showcase">
+                    <h3>GuessX</h3>
+                    <p id="desc">A Java app made using Android Studio to create a guessing game, with various different gamemodes.</p>
+                </div></a>
+                <a href="https://github.com/rehan-nasir/web-portfolio" target="_blank"><div class="showcase">
+                    <h3>Web Portfolio</h3>
+                    <p id="desc">The source code to the website you are currently viewing! Created with HTML/CSS and JavaScript.</p>
+                </div></a>
+            </div>
+        </section>
+        <section class="container" id="contact">
+            <div id="contact-title">
+                <h2>Contact</h2>
+                <p>Want to stay in touch? Send me a message!</p>
+            </div>
+            <div id="socials">
+                <form action="" id="contact-msg">
+                    <div id="inp-email">
+                        <input type="text" placeholder="Email" class="input-style email-name">
+                    </div>
+                    <div id="inp-name">
+                        <input type="text" placeholder="Name" class="input-style email-name">
+                    </div>
+                    <div>
+                        <textarea name="" name="" placeholder="Message" class="input-style" id="inp-msg"></textarea>
+                    </div>
+                    <div id="inp-btn">
+                        <button class="input-style">SUBMIT</button>
+                    </div>
+                </form>
+                <div id="icons">
+                    <ul>
+                        <li>Github</li>
+                        <li>LinkedIn</li>
+                        <li>Email</li>
+                    </ul>
                 </div>
             </div>
         </section>
