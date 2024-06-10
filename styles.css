@@ -161,31 +161,26 @@ img {
     text-underline-offset: 7px;
 }
 #contact{
-    border: solid;
 }
 #contact-title{
     margin-top: 10%;
     margin-left: 10%;
     font-size: 30px;
     width: 700px;
-    border: solid;
 }
 #socials{
     background-color: crimson;
     border-radius: 20px;
     display: flex;
     margin-left: 10%;
-    margin-right: 10%;
-    border: solid;
-    height: 450px;
+    margin-right: 20%;
+    height: 550px;
 }
 #icons {
     width: 30%;
-    border: solid;
 }
 #message {
     width: 80%;
-    border: solid;
 }
 .contact-input{
     font-family: 'Roboto';
@@ -197,9 +192,12 @@ img {
     margin-top: 10px;
 }
 #contact-msg {
-    padding-top: 20px;
-    padding-left: 10%;
+    padding-top: 50px;
+    padding-left: 5%;
     width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 .input-style {
     color: white;
@@ -211,14 +209,58 @@ img {
     font-size: 20px;
     height: 40px;
     color: white;
+    width: 70%;
     border-radius: 10px;
 }
 #inp-msg {
-    border: solid;
     color: white;
     border-radius: 10px;
     font-size: 20px;
     padding: 20px 10px;
     line-height: 28px;
     width: 90%;
+}
+#inp-btn {
+    width: 90%;
+    gap: 110px;
+    display: flex;
+    justify-content: space-between;
+}
+#form-btn {
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+#social-ul{
+    margin-left: 10%;
+    list-style: none;
+}
+#icons{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+#resume {
+}
+#msg-res{
+    width: 100%;
+    height: 100%;
+}
+#res-div {
+}
+#dl-res{
+    background-color: purple;
+    color: black;
+    border: none;
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
 }
