@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
     <head>
         <meta charset="UTF-8">
         <meta name="author" content="Rehan Nasir">
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="description" content="Web Portfolio">
+        <script src="https://unpkg.com/scrollreveal"></script>
         <title>Rehan Nasir</title>
         <link rel="stylesheet" href="styles.css" type="text/css">
     </head>
@@ -17,16 +18,16 @@
                 </div>
                 <nav id="nav-links">
                     <ul id="nav-sec" class="nav-text">
-                        <li><a href="#intro">Welcome</a></li>
-                        <li><a href="#about">About Me</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#top" class="font-anim" >Welcome</a></li>
+                        <li><a href="#about" class="font-anim">About Me</a></li>
+                        <li><a href="#projects" class="font-anim">Projects</a></li>
+                        <li><a href="#contact" class="font-anim">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
         <section class="container" id="intro">
-            <div id="intro">
+            <div id="intro-text">
                 <div id="intro-msg">
                     <h1>Hello There! I'm Rehan.</h1>
                     <p class="text-anim">Welcome to my page.</p>
@@ -37,10 +38,10 @@
             </div>
         </section>
         <section class="container" id="about">
-            <div id="about-title">
+            <div id="about-title" class="scroll-reveal">
                 <h2>About Me</h2>
             </div>
-            <div id="about-content">
+            <div id="about-content" class="scroll-reveal">
                 <div id="about-img-p">
                     <img src="images/picture.jpg" alt="" height="250px">
                     <div id="abt-p">
@@ -70,8 +71,8 @@
             </div>
         </section>
         <section class="container" id="projects">
-            <div id="projects-text">
-                <h2 class="project-anim">Projects</h2>
+            <div id="projects-text" class="scroll-reveal">
+                <h2 class="project-anim scroll-reveal">Projects</h2>
             </div>
             <div id="project-grid">
                 <a href="https://github.com/rehan-nasir/flight-price-predictions" target="_blank"><div class="showcase">
@@ -92,12 +93,12 @@
                 </div></a>
             </div>
         </section>
-        <section class="container" id="contact">
+        <section class="container scroll-reveal" id="contact">
             <div id="contact-title">
                 <h2>Contact</h2>
                 <p>Want to stay in touch? Send me a message!</p>
             </div>
-            <div id="socials">
+            <div id="socials" class="scroll-reveal">
                 <form action="" id="contact-msg">
                     <div id="inp-email" class="aa">
                         <input type="text" placeholder="Email" class="input-style email-name">
@@ -111,13 +112,13 @@
                     <div id="inp-btn" class="aa">
                         <button class="input-style" id="form-btn">SUBMIT</button>
                         <div id="res-div">
-                            <button id="dl-res">VIEW RESUME</button>
+                            <button id="dl-res"><a href="documents/Rehan_Nasir_RESUME.pdf" target="_blank">DOWNLOAD RESUME</a></button>
                         </div>
                     </div>
                 </form>
                 <div id="icons">
-                    <img src="images/bxl-github.png" alt="" height="96" width="96">
-                    <img src="images/bxl-linkedin.png" alt="" height="96" width="96">
+                    <a href="https://github.com/rehan-nasir" target="_blank" title="My GitHub Page"><img src="images/bxl-github.png" alt="" height="96" width="96" ></a>
+                    <a href="https://www.linkedin.com/in/rehannasir/" target="_blank" title="My LinkedIn Profile"><img src="images/bxl-linkedin.png" alt="" height="96" width="96"></a>
                     <img src="images/bx-envelope.png" alt="" height="96" width="96">
                 </div>
             </div>
