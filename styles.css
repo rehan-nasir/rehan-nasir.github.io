@@ -20,7 +20,6 @@ body{
     font-size: 40px;
     width: 500px;
     height: 400px;
-    
 }
 #btn1{
     display: inline-block;
@@ -34,6 +33,7 @@ body{
     width: 150px;
     height: 50px;
     border-radius: 10px;
+    cursor: pointer;
 }
 .text-anim {
     font-family: monospace;
@@ -136,7 +136,8 @@ img {
     display: flex;
     justify-content: space-between;
     background-color: crimson;
-    border-radius: 20px;
+    z-index: 999;
+    /* border-radius: 20px; */
 }
 #nav-title {
     display: flex;
@@ -163,7 +164,7 @@ img {
 #contact{
 }
 #contact-title{
-    margin-top: 10%;
+    padding-top: 100px;
     margin-left: 10%;
     font-size: 30px;
     width: 700px;
@@ -225,6 +226,7 @@ img {
     gap: 110px;
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
 #form-btn {
     width: 200px;
@@ -233,6 +235,7 @@ img {
     font-size: 20px;
     font-weight: bold;
     text-decoration: underline;
+    cursor: pointer;
 }
 #social-ul{
     margin-left: 10%;
@@ -244,8 +247,6 @@ img {
     flex-direction: column;
     align-items: center;
     gap: 60px;
-}
-#resume {
 }
 #msg-res{
     width: 100%;
@@ -262,5 +263,17 @@ img {
     border-radius: 10px;
     font-size: 20px;
     font-weight: bold;
-    text-decoration: underline;
+
+    cursor: pointer;
+}
+a, a:hover, a:visited{
+    color: inherit;
+    text-decoration: none;
+}
+.font-anim {
+    color: black;
+    transition: color 0.25s ease-in-out;
+}
+.font-anim:hover {
+    color: #fff;
 }
