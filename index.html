@@ -10,11 +10,11 @@
         <title>Rehan Nasir</title>
         <link rel="stylesheet" href="styles.css" type="text/css">
     </head>
-    <body>
+    <body onload="startTime(); startDate();">
         <header id="top">
             <div id="navbar">
                 <div id="nav-title">
-                    <p class="nav-text">Rehan</p>
+                    <img src="images/logo.png" alt="" height="80px" class="nav-text">
                 </div>
                 <nav id="nav-links">
                     <ul id="nav-sec" class="nav-text">
@@ -35,6 +35,10 @@
                         <button class="btn" onclick="scrollToContact()">CONTACT</button>
                     </div>
                 </div>
+            </div>
+            <div id="time-date">
+                <div id="clock"></div>
+                <div id="date"></div>
             </div>
         </section>
         <section class="container" id="about">
@@ -119,7 +123,12 @@
                 <div id="icons">
                     <a href="https://github.com/rehan-nasir" target="_blank" title="My GitHub Page"><img src="images/bxl-github.png" alt="" height="96" width="96" ></a>
                     <a href="https://www.linkedin.com/in/rehannasir/" target="_blank" title="My LinkedIn Profile"><img src="images/bxl-linkedin.png" alt="" height="96" width="96"></a>
-                    <img src="images/bx-envelope.png" alt="" height="96" width="96">
+                    <div id="pop">
+                        <div id="popup-text">
+
+                        </div>
+                        <img src="images/bx-envelope.png" id="copy" alt="nasirehan@gmail.com" height="96" width="96" onclick="copyEmail()" title="Click to copy my email">
+                    </div>
                 </div>
             </div>
         </section>
