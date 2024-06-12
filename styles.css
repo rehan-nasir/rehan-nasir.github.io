@@ -14,12 +14,33 @@ body{
 #intro {
     text-align: left;
 }
+#intro-text {
+}
 #intro-msg {
     margin-left: 120px;
     margin-top: 170px;
     font-size: 40px;
     width: 500px;
     height: 400px;
+}
+#time-date{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 40%;
+}
+#clock {
+    display: inline-block;
+    font-size: 100px;
+    font-weight: 100;
+    color: gray;
+}
+#date {
+    display: inline-block;
+    font-size: 60px;
+    font-weight: 100;
+    color: gray;
 }
 #btn1{
     display: inline-block;
@@ -89,7 +110,7 @@ body{
 #interests {
 }
 img {
-    border-radius: 20px;
+    /* border-radius: 20px; */
 }
 #skills-title {
     color: crimson;
@@ -142,7 +163,6 @@ img {
 #nav-title {
     display: flex;
     justify-content: left;
-    margin-left: 65px;
 }
 #nav-links{
     display: flex;
@@ -170,7 +190,7 @@ img {
     width: 700px;
 }
 #socials{
-    background-color: crimson;
+    background-color: #dc143c;
     border-radius: 20px;
     display: flex;
     margin-left: 10%;
@@ -255,15 +275,14 @@ img {
 #res-div {
 }
 #dl-res{
-    background-color: purple;
-    color: black;
+    background-color: black;
+    color: white;
     border: none;
     width: 200px;
     height: 60px;
     border-radius: 10px;
     font-size: 20px;
     font-weight: bold;
-
     cursor: pointer;
 }
 a, a:hover, a:visited{
@@ -276,4 +295,11 @@ a, a:hover, a:visited{
 }
 .font-anim:hover {
     color: #fff;
+}
+#copy {
+    cursor: pointer;
+}
+#popup-text {
+    height: 16px;
+    text-align: center;
 }
