@@ -1,179 +1,146 @@
 <!DOCTYPE html>
 <html lang="en" id="top">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="Rehan Nasir">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta name="description" content="Web Portfolio">
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <title>Rehan Nasir</title>
-        <link rel="stylesheet" href="styles.css" type="text/css">
-    </head>
-    <body onload="startTime(); startDate();">
-        <header id="top">
-            <div id="navbar">
-                <div id="nav-title">
-                    <img src="images/logo.png" alt="" height="80px" class="nav-text">
-                </div>
-                <nav id="nav-links">
-                    <ul id="nav-sec" class="nav-text">
-                        <li><a href="#top" class="font-anim" >Welcome</a></li>
-                        <li><a href="#about" class="font-anim">About Me</a></li>
-                        <li><a href="#projects" class="font-anim">Projects</a></li>
-                        <li><a href="#contact" class="font-anim">Contact</a></li>
-                    </ul>
-                </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rehan Nasir">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Web Portfolio">
+    <script src="https://unpkg.com/scrollreveal" defer></script>
+    <title>Rehan Nasir</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body onload="startTime(); startDate();">
+    <header id="top">
+        <div id="navbar">
+            <div id="nav-title">
+                <img src="images/logo.png" alt="" height="80px" class="nav-text">
             </div>
-        </header>
-        <section class="container" id="intro">
-            <div id="intro-text" class="scroll-reveal">
-                <div id="intro-msg">
-                    <h1>Hello There! I'm Rehan.</h1>
-                    <p class="text-anim">Welcome to my page.</p>
-                    <div id="btn1">
-                        <button class="btn" onclick="scrollToContact()">CONTACT</button>
-                    </div>
-                </div>
-            </div>
-            <div id="time-date">
-                <div id="clock"></div>
-                <div id="date"></div>
-            </div>
-        </section>
-        <section class="container" id="about">
-            <div id="about-title" class="scroll-reveal">
-                <h2>About Me</h2>
-            </div>
-            <div id="about-content" class="scroll-reveal">
-                <div id="about-img-p">
-                    <img src="images/picture.jpg" alt="" id="me" height="250px">
-                    <div id="abt-p">
-                        <p>I am currently pursuing a Bachelor's of Science (Honours) in Computer Science at York University. During my time here, I have learned a lot of new skills and interests. I challenge myself everyday by working on new projects and solving technical questions, while still maintaining a proper work-life balance.</p>
-                    </div>
-                </div>
-                <!-- <div id="skills-title">
-                    <h2>Skills</h2>
-                </div> -->
-                <div id="skills-interests-container">
-                    <table id="skills">
-                        <tr>
-                            <th>Skills</th>
-                        </tr>
-                        <tr>
-                            <td>Java</td>
-                        </tr>
-                        <tr>
-                            <td>Python</td>
-                        </tr>
-                        <tr>
-                            <td>HTML/CSS</td>
-                        </tr>
-                        <tr>
-                            <td>JavaScript</td>
-                        </tr>
-                        <tr>
-                            <td>SQL</td>
-                        </tr>
-                    </table>
-                    <table id="interests">
-                        <tr>
-                            <th>Interests</th>
-                        </tr>
-                        <tr>
-                            <td>Frontend Engineering</td>
-                        </tr>
-                        <tr>
-                            <td>Backend Engineering</td>
-                        </tr>
-                        <tr>
-                            <td>Full stack Engineering</td>
-                        </tr>
-                        <tr>
-                            <td>Software Engineering</td>
-                        </tr>
-                        <tr>
-                            <td>Data Analysis</td>
-                        </tr>
-                    </table>
-                    <!-- <div id="skills">
-                        <span></span>
-                            <div id="skill">Java</div>
-                            <div id="skill">Python</div>
-                            <div id="skill">HTML</div>
-                            <div id="skill">CSS</div>
-                            <div id="skill">JavaScript</div>
-                            <div id="skill">SQL</div>
-                    </div>
-                    <div id="interests">
-                        <div id="interest">Front End Engineering</div>
-                        <div id="interest">Back End Engineering</div>
-                        <div id="interest">Full Stack Engineering</div>
-                        <div id="interest">Software Engineering</div>
-                        <div id="interest">Data Analysis</div>
-                    </div> -->
+            <nav id="nav-links">
+                <ul id="nav-sec" class="nav-text">
+                    <li><a href="#top" class="font-anim">Welcome</a></li>
+                    <li><a href="#about" class="font-anim">About Me</a></li>
+                    <li><a href="#projects" class="font-anim">Projects</a></li>
+                    <li><a href="#contact" class="font-anim">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="container" id="intro">
+        <div id="intro-text" class="scroll-reveal">
+            <div id="intro-msg">
+                <h1>Hello There! I'm Rehan.</h1>
+                <p class="text-anim">Welcome to my page.</p>
+                <div id="btn1">
+                    <button class="btn" id="to-contacts" onclick="scrollToContact()">CONTACT</button>
                 </div>
             </div>
-        </section>
-        <section class="container" id="projects">
-            <div id="projects-text" class="scroll-reveal">
-                <h2 class="project-anim scroll-reveal">Projects</h2>
+        </div>
+        <div id="time-date">
+            <div id="clock"></div>
+            <div id="date"></div>
+        </div>
+    </section>
+    <section class="container" id="about">
+        <div id="about-title" class="scroll-reveal">
+            <h2>About Me</h2>
+        </div>
+        <div id="about-content" class="scroll-reveal">
+            <div id="about-img-p">
+                <img src="images/picture.jpg" alt="" id="me" height="250px">
+                <div id="abt-p">
+                    <p>I am currently pursuing a Bachelor's of Science (Honours) in Computer Science at York University. During my time here, I have learned a lot of new skills and interests. I challenge myself every day by working on new projects and solving technical questions, while still maintaining a proper work-life balance.</p>
+                </div>
             </div>
-            <div id="project-grid">
-                <a href="https://github.com/rehan-nasir/flight-price-predictions" target="_blank"><div class="showcase">
+            <div id="skills-interests-container">
+                <table id="skills">
+                    <tr><th>Skills</th></tr>
+                    <tr><td>Java</td></tr>
+                    <tr><td>Python</td></tr>
+                    <tr><td>HTML/CSS</td></tr>
+                    <tr><td>JavaScript</td></tr>
+                    <tr><td>SQL</td></tr>
+                </table>
+                <table id="interests">
+                    <tr><th>Interests</th></tr>
+                    <tr><td>Frontend Engineering</td></tr>
+                    <tr><td>Backend Engineering</td></tr>
+                    <tr><td>Full stack Engineering</td></tr>
+                    <tr><td>Software Engineering</td></tr>
+                    <tr><td>Data Analysis</td></tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section class="container" id="projects">
+        <div id="projects-text" class="scroll-reveal">
+            <h2 class="project-anim scroll-reveal">Projects</h2>
+        </div>
+        <div id="project-grid">
+            <a href="https://github.com/rehan-nasir/flight-price-predictions" target="_blank">
+                <div class="showcase">
                     <h3>Flight Data Analysis</h3>
-                    <p id="desc">A team effort to analyse over 300,000 flight samples using python and jupyter notebook.</p>
-                </div></a>
-                <a href="https://github.com/rehan-nasir/etsy-sales-scraper" target="_blank"><div class="showcase" id="etsy">
+                    <p id="desc">A team effort to analyze over 300,000 flight samples using python and jupyter notebook.</p>
+                </div>
+            </a>
+            <a href="https://github.com/rehan-nasir/etsy-sales-scraper" target="_blank">
+                <div class="showcase" id="etsy">
                     <h3>Etsy Extract</h3>
                     <p id="desc">A python web-scraper that returns in-depth information about sellers and their products.</p>
-                </div></a>
-                <a href="https://github.com/rehan-nasir/guess-x" target="_blank"><div class="showcase">
+                </div>
+            </a>
+            <a href="https://github.com/rehan-nasir/guess-x" target="_blank">
+                <div class="showcase">
                     <h3>GuessX</h3>
-                    <p id="desc">A Java app made using Android Studio to create a guessing game, with various different gamemodes.</p>
-                </div></a>
-                <a href="https://github.com/rehan-nasir/web-portfolio" target="_blank"><div class="showcase">
+                    <p id="desc">A Java app made using Android Studio to create a guessing game, with various different game modes.</p>
+                </div>
+            </a>
+            <a href="https://github.com/rehan-nasir/web-portfolio" target="_blank">
+                <div class="showcase">
                     <h3>Web Portfolio</h3>
                     <p id="desc">The source code to the website you are currently viewing! Created with HTML/CSS and JavaScript.</p>
-                </div></a>
-            </div>
-        </section>
-        <section class="container scroll-reveal" id="contact">
-            <div id="contact-title">
-                <h2>Contact</h2>
-                <p>Want to stay in touch? Send me a message!</p>
-            </div>
-            <div id="socials" class="scroll-reveal">
-                <form action="https://api.web3forms.com/submit" method="POST" id="contact-msg">
-                    <div id="inp-email" class="aa">
-                        <input required type="text" placeholder="Email" class="input-style email-name" name="email">
-                    </div>
-                    <input type="hidden" name="access_key" value="dc7fb0d8-4792-4c24-a658-54a91a502713">
-                    <div id="inp-name" class="aa">
-                        <input required type="text" placeholder="Name" class="input-style email-name" name="name">
-                    </div>
-                    <div class="aa">
-                        <textarea required name="message" placeholder="Message" class="input-style" id="inp-msg"></textarea>
-                    </div>
-                    <div id="inp-btn" class="aa">
-                        <button class="input-style" id="form-btn">SUBMIT</button>
-                        <div id="res-div">
-                            <button id="dl-res"><a href="documents/Rehan_Nasir_RESUME.pdf" target="_blank">DOWNLOAD RESUME</a></button>
-                        </div>
-                    </div>
-                </form>
-                <div id="icons">
-                    <a href="https://github.com/rehan-nasir" target="_blank" title="My GitHub Page"><img src="images/bxl-github.png" alt="" height="96" width="96" ></a>
-                    <a href="https://www.linkedin.com/in/rehannasir/" target="_blank" title="My LinkedIn Profile"><img src="images/bxl-linkedin.png" alt="" height="96" width="96"></a>
-                    <div id="pop">
-                        <div id="popup-text">
-
-                        </div>
-                        <img src="images/bx-envelope.png" id="copy" alt="nasirehan@gmail.com" height="96" width="96" onclick="copyEmail()" title="Click to copy my email">
+                </div>
+            </a>
+        </div>
+    </section>
+    <section class="container scroll-reveal" id="contact">
+        <div id="contact-title">
+            <h2>Contact</h2>
+            <p>Want to stay in touch? Send me a message!</p>
+        </div>
+        <div id="socials" class="scroll-reveal">
+            <form action="https://api.web3forms.com/submit" method="POST" id="contact-msg">
+                <div id="inp-email" class="aa">
+                    <input required type="text" placeholder="Email" class="input-style email-name" name="email">
+                </div>
+                <input type="hidden" name="access_key" value="dc7fb0d8-4792-4c24-a658-54a91a502713">
+                <div id="inp-name" class="aa">
+                    <input required type="text" placeholder="Name" class="input-style email-name" name="name">
+                </div>
+                <div class="aa">
+                    <textarea required name="message" placeholder="Message" class="input-style" id="inp-msg"></textarea>
+                </div>
+                <div id="inp-btn" class="aa">
+                    <button class="input-style" id="form-btn">SUBMIT</button>
+                    <div id="res-div">
+                        <button id="dl-res"><a href="documents/Rehan_Nasir_RESUME.pdf" target="_blank">DOWNLOAD RESUME</a></button>
                     </div>
                 </div>
+            </form>
+            <div id="icons">
+                <a href="https://github.com/rehan-nasir" target="_blank" title="My GitHub Page">
+                    <img src="images/bxl-github.png" alt="" height="96" width="96">
+                </a>
+                <a href="https://www.linkedin.com/in/rehannasir/" target="_blank" title="My LinkedIn Profile">
+                    <img src="images/bxl-linkedin.png" alt="" height="96" width="96">
+                </a>
+                <div id="pop">
+                    <div id="popup-text"></div>
+                    <img src="images/bx-envelope.png" id="copy" alt="nasirehan@gmail.com" height="96" width="96" onclick="copyEmail()" title="Click to copy my email">
+                </div>
             </div>
-        </section>
-        <script src="script.js"></script>
-    </body>
+        </div>
+    </section>
+    <script src="script.js" defer></script>
+</body>
 </html>
