@@ -358,7 +358,6 @@ a, a:hover, a:visited {
     }
     #icons{
         width: 100%;
-        border: solid;
         display: flex;
         flex-direction: row;
         gap: 10px;
@@ -373,5 +372,10 @@ a, a:hover, a:visited {
     }
     #dl-res{
         width: 100%;
+    }
+}
+@media screen and (max-height: 999px){
+    .container {
+        height: 100%;
     }
 }
