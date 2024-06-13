@@ -7,7 +7,6 @@ body{
     color: white;
     background-color: black;
 }
-
 .container {
     height: 100vh;
 }
@@ -72,6 +71,9 @@ body{
 @keyframes typing {
     from {width: 0}
 }
+#me {
+    border-radius: 20px;
+}
 #about {
     text-align: center;
 }
@@ -95,19 +97,37 @@ body{
     width: 340px;
 }
 #skills-interests-container{
-    margin-left: 30%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 300px;
+    /* margin-left: 30%;
     margin-right: 30%;
     display: flex;
     justify-content: center;
-    gap: 50px;
+    border: solid; */
 }
-#skills{
+table {
+    width: 25vw;
 }
-#skill, #interest {
-    font-size: 20px;
-    width: 300px;
+th {
+    color: crimson;
+    font-size: 35px;
+    border-bottom: solid;
+    border-radius: 20px;
 }
-#interests {
+td {
+    font-weight: bold;
+    border-bottom: solid 4px white;
+    transition: font-size 0.25s ease-in-out;
+}
+td:hover{
+    font-size: 25px;
+}
+#skills {
+}
+#skills, #interests{
+    font-size:  20px;
 }
 img {
     /* border-radius: 20px; */
@@ -130,7 +150,9 @@ img {
     height: 150px;
 }
 #project-grid {
-    margin-top: 90px;
+    border-left: solid #dc143c 7px;
+    border-right: solid #dc143c 7px;
+    border-radius: 20px;
     flex-grow: 1;
     padding: 100px 0;
     display: flex;
@@ -138,17 +160,22 @@ img {
     align-items: center;
     flex-flow: row wrap;
     gap: min(4vw, 15px);
+    background: radial-gradient(darkgray, black 60%);
 }
 .showcase {
     color: black;
     background-color: crimson;
     text-align: center;
     width: 300px;
-    height: 150px;
+    height: 350px;
     border: purple;
     border-radius: 20px;
     display: grid;
     place-content: center;
+    transition: background-color 0.25s ease-in-out;
+}
+.showcase:hover{
+    background-color: white;
 }
 #navbar{
     position: fixed;
