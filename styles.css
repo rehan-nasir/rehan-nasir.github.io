@@ -360,6 +360,7 @@ a, a:hover, a:visited {
         width: 100%;
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
         gap: 10px;
     }
     #socials{
@@ -377,5 +378,10 @@ a, a:hover, a:visited {
 @media screen and (max-height: 999px){
     .container {
         height: 100%;
+    }
+    #icons img{
+        margin-top: 5%;
+        width: 60px;
+        height: 60px;
     }
 }
