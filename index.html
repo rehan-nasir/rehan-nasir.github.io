@@ -27,7 +27,7 @@
             </div>
         </header>
         <section class="container" id="intro">
-            <div id="intro-text">
+            <div id="intro-text" class="scroll-reveal">
                 <div id="intro-msg">
                     <h1>Hello There! I'm Rehan.</h1>
                     <p class="text-anim">Welcome to my page.</p>
@@ -47,16 +47,56 @@
             </div>
             <div id="about-content" class="scroll-reveal">
                 <div id="about-img-p">
-                    <img src="images/picture.jpg" alt="" height="250px">
+                    <img src="images/picture.jpg" alt="" id="me" height="250px">
                     <div id="abt-p">
                         <p>I am currently pursuing a Bachelor's of Science (Honours) in Computer Science at York University. During my time here, I have learned a lot of new skills and interests. I challenge myself everyday by working on new projects and solving technical questions, while still maintaining a proper work-life balance.</p>
                     </div>
                 </div>
-                <div id="skills-title">
+                <!-- <div id="skills-title">
                     <h2>Skills</h2>
-                </div>
+                </div> -->
                 <div id="skills-interests-container">
-                    <div id="skills">
+                    <table id="skills">
+                        <tr>
+                            <th>Skills</th>
+                        </tr>
+                        <tr>
+                            <td>Java</td>
+                        </tr>
+                        <tr>
+                            <td>Python</td>
+                        </tr>
+                        <tr>
+                            <td>HTML/CSS</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                        </tr>
+                        <tr>
+                            <td>SQL</td>
+                        </tr>
+                    </table>
+                    <table id="interests">
+                        <tr>
+                            <th>Interests</th>
+                        </tr>
+                        <tr>
+                            <td>Frontend Engineering</td>
+                        </tr>
+                        <tr>
+                            <td>Backend Engineering</td>
+                        </tr>
+                        <tr>
+                            <td>Full stack Engineering</td>
+                        </tr>
+                        <tr>
+                            <td>Software Engineering</td>
+                        </tr>
+                        <tr>
+                            <td>Data Analysis</td>
+                        </tr>
+                    </table>
+                    <!-- <div id="skills">
                         <span></span>
                             <div id="skill">Java</div>
                             <div id="skill">Python</div>
@@ -71,6 +111,7 @@
                         <div id="interest">Full Stack Engineering</div>
                         <div id="interest">Software Engineering</div>
                         <div id="interest">Data Analysis</div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -103,15 +144,16 @@
                 <p>Want to stay in touch? Send me a message!</p>
             </div>
             <div id="socials" class="scroll-reveal">
-                <form action="" id="contact-msg">
+                <form action="https://api.web3forms.com/submit" method="POST" id="contact-msg">
                     <div id="inp-email" class="aa">
-                        <input type="text" placeholder="Email" class="input-style email-name">
+                        <input required type="text" placeholder="Email" class="input-style email-name" name="email">
                     </div>
+                    <input type="hidden" name="access_key" value="dc7fb0d8-4792-4c24-a658-54a91a502713">
                     <div id="inp-name" class="aa">
-                        <input type="text" placeholder="Name" class="input-style email-name">
+                        <input required type="text" placeholder="Name" class="input-style email-name" name="name">
                     </div>
                     <div class="aa">
-                        <textarea name="" name="" placeholder="Message" class="input-style" id="inp-msg"></textarea>
+                        <textarea required name="message" placeholder="Message" class="input-style" id="inp-msg"></textarea>
                     </div>
                     <div id="inp-btn" class="aa">
                         <button class="input-style" id="form-btn">SUBMIT</button>
