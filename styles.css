@@ -307,3 +307,43 @@ a, a:hover, a:visited {
     height: 16px;
     text-align: center;
 }
+@media (min-width: 1024px) {
+    #intro-msg {
+        margin-left: 10%;
+        margin-top: 10%;
+        font-size: 3em;
+        
+    }
+    #nav-links{
+        justify-content: left;
+    }
+
+    #time-date {
+        height: 30%;
+    }
+
+    #clock {
+        font-size: 6em;
+    }
+
+    #date {
+        font-size: 3em;
+    }
+
+    #skills-interests-container {
+        flex-direction: row;
+    }
+
+    #about-img-p {
+        flex-direction: row;
+    }
+
+    #icons {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    #inp-btn {
+        gap: 50px;
+    }
+}
