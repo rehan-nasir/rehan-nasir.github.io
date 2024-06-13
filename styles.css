@@ -307,43 +307,71 @@ a, a:hover, a:visited {
     height: 16px;
     text-align: center;
 }
-@media (min-width: 1024px) {
-    #intro-msg {
-        margin-left: 10%;
-        margin-top: 10%;
-        font-size: 3em;
-        
-    }
-    #nav-links{
-        justify-content: left;
-    }
-
-    #time-date {
-        height: 30%;
-    }
-
+@media screen and (max-width: 782px) {
+    #nav-links {
+        visibility: hidden;
+    } 
+}
+@media screen and (max-width: 782px) {
+    #nav-links {
+        visibility: hidden;
+    } 
     #clock {
-        font-size: 6em;
+        font-size: 80px;
     }
-
+    
     #date {
-        font-size: 3em;
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 436px) {
+    #about-img-p{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+    }
+    #me{
+        align-self: center;
+    }
+    #abt-p{
+        width: 100%;
     }
 
-    #skills-interests-container {
-        flex-direction: row;
+}
+@media screen and (max-width: 858px) {
+    .showcase {
+        height: 150px;
     }
-
-    #about-img-p {
-        flex-direction: row;
-    }
-
     #icons {
-        flex-direction: row;
-        gap: 40px;
+        size: 40px;
     }
-
+    #intro-msg {
+        margin-left: 0%;
+        font-size: 30px;
+        width: 400px;
+    }
+    #contact-title {
+        margin: 0%;
+        width: 80%;
+    }
+    #icons{
+        width: 100%;
+        border: solid;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    #socials{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
     #inp-btn {
-        gap: 50px;
+        gap: 10%;
+    }
+    #dl-res{
+        width: 100%;
     }
 }
