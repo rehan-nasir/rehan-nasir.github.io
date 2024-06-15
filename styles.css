@@ -375,7 +375,7 @@ a, a:hover, a:visited {
         width: 100%;
     }
 }
-@media screen and (max-height: 999px){
+@media screen and (max-height: 950px){
     .container {
         height: 100%;
     }
